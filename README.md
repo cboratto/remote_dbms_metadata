@@ -7,17 +7,17 @@ Routine to compare DDL structure differences between two databases. The DDL diff
 I used this to automate DDL generation of two distinct databases. These two, or more, databases communicate between Oracle Matarialized View architecture. Those DDLs needed to be analyzed prior applying it due to peculiar needs.
 
 ## Features 
-DDL generation
-DDL materialized view
-DDL customized for cases when more then one remote site is consuming the same source (FAKE_MVIEW_NEED)
-Compare only objects altered in the past X days (DAYS).
-List of emails to be notified (EMAIL_RECEIPT).
-Capture table comments (ENABLE_COMMENT_COLUMN)
-Index DDL generation (ENABLE_INDEX_DDL)
-Check schemas that should be compared (OWNER_GPG_CHECK).
-Blacklist for tables (API - add_Table_to_Blacklist)
-Blacklist for table columns (BLACKLIST_COLUMN)
-Control blacklist time (BLACKLIST_TABLE_TIME)
+1. DDL generation
+2. DDL materialized view
+3. DDL customized for cases when more then one remote site is consuming the same source (FAKE_MVIEW_NEED)
+4. Compare only objects altered in the past X days (DAYS).
+5. List of emails to be notified (EMAIL_RECEIPT).
+6. Capture table comments (ENABLE_COMMENT_COLUMN)
+7. Index DDL generation (ENABLE_INDEX_DDL)
+8. Check schemas that should be compared (OWNER_GPG_CHECK).
+9. Blacklist for tables (API - add_Table_to_Blacklist)
+10. Blacklist for table columns (BLACKLIST_COLUMN)
+11. Control blacklist time (BLACKLIST_TABLE_TIME)
 
 ## API Call
 
@@ -48,3 +48,11 @@ begin
 end;
 /
 ```
+
+## Credit
+The code to acess and use DBMS_METADATA to get DDL on the URL below:
+http://phil-sqltips.blogspot.com.br/2009/06/dbmsmetadata-across-database-links.html
+
+On this page, you can get a little help on what kind of privilegies you must have on both database to get acess to DBMS_METADATA and dblink.
+
+So a big thanks to this guy who helped a lot. 
