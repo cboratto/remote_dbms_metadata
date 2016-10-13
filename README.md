@@ -50,7 +50,7 @@ end;
 ```
 
 ## Credit
-The code to acess and use DBMS_METADATA to get DDL on the URL below:
+The code original code to remote_dbms_metadata can be found on the URL below:
 http://phil-sqltips.blogspot.com.br/2009/06/dbmsmetadata-across-database-links.html
 
 On this page, you can get a little help on what kind of privilegies you must have on both database to get acess to DBMS_METADATA and dblink.
