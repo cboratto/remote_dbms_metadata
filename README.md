@@ -1,7 +1,7 @@
 # remote_dbms_metadata
 
 ## What is it?
-Routine to compare DDL structure differences between two databases. The DDL differences could be sent by email.
+Routine to compare DDL differences between Oracle databases. This routine automatically identifies which tables has been added to the model and which has been changed. Those DDL differences can be sent by email.
 
 ## Use case
 I used this to automate DDL generation of two distinct databases. These two, or more, databases communicate between Oracle Matarialized View architecture. Those DDLs needed to be analyzed prior applying it due to peculiar needs.
